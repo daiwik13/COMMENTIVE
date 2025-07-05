@@ -1,0 +1,8 @@
+<h2>Analysis Results</h2>
+{% for comment, sentiment, fake in comments %}
+<div class="comment-box">
+    <p><strong>Comment:</strong> {{ comment }}</p>
+    <p><strong>Sentiment:</strong> {{ sentiment }}</p>
+    <p><strong>Status:</strong> {{ fake }}</p>
+</div>
+{% endfor %}
