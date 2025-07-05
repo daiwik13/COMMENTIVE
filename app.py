@@ -38,3 +38,5 @@ def youtube_input():
         comments = fetch_youtube_comments(video_url, api_key)
         return render_template('youtube_result.html', comments=comments)
     return render_template('youtube_input.html')
+if __name__ == "__main__":
+    app.run(debug=True)
